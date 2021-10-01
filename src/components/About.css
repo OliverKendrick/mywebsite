@@ -1,0 +1,14 @@
+.about {
+  padding: 4rem;
+  background: rgb(57, 57, 71);
+  color: white;
+  text-align: justify;
+}
+h1 {
+  text-align: center;
+}
+p {
+  text-align: center;
+  margin-top: 20px;
+  font-family: cursive;
+}

@@ -1,38 +1,176 @@
-.App {
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "PT Sans", sans-serif;
+}
+
+.home,
+.services,
+.products,
+.sign-up {
+  display: flex;
+  height: 90vh;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+}
+
+.services {
+  background-image: url("/src/images/img-2.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+  font-size: 100px;
+}
+
+.sub-section-alternative {
+  display: flex;
+  flex-direction: column;
   text-align: center;
+  padding: 80px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.headshot {
+  width: 300px;
+  border-radius: 150px;
+  margin-left: 80px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.headshot-container {
+  display: flex;
+  align-items: center;
+}
+
+.project-card {
+  width: 300px;
+  height: 500px;
+  box-shadow: 5px 5px 20px rgb(197, 195, 195);
+  margin: 10px;
+}
+
+.project-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+@media only screen and (max-width: 1000px) {
+  .project-container {
+    display: flex;
+    flex-wrap: wrap;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.project-image {
+  margin-top: 25px;
+  width: 250px;
+  border-radius: 125px;
+}
+
+hr {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.project-link {
+  text-decoration: none;
+  color: #ef744b;
+}
+
+a {
+  text-decoration: none;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.sign-up {
+  width: 100%;
+  background-image: url("/src/images/img-1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 5%;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.contactOverlay {
+  width: 100%;
+  padding-top: 10%;
+  padding-bottom: 10%;
+  background-color: rgba(0, 0, 0, 0.921);
+}
+.form {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+form {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  background-color: white;
+  overflow: hidden;
+  border-radius: 20px;
+}
+form button {
+  width: 190px;
+  height: 55px;
+  border: 0;
+  border-radius: 5px;
+  background-color: #001517;
+  -webkit-transition: 0.5s linear;
+  -o-transition: 0.5s linear;
+  transition: 0.5s linear;
+  color: white;
+  font-weight: bold;
+  margin-top: 20%;
+}
+form button:hover {
+  background-color: unset;
+  border: 2px solid #e49504;
+  -webkit-transition: 0.5s linear;
+  -o-transition: 0.5s linear;
+  transition: 0.5s linear;
+  color: black;
+}
+.formWord {
+  width: 40%;
+  padding: 4%;
+}
+.formWord h2 {
+  font-size: 35px;
+  font-weight: bold;
+  font-family: "Josefin Sans", sans-serif;
+  margin-bottom: 10%;
+}
+.formWord input {
+  width: 100%;
+  height: 50px;
+  margin-bottom: 10%;
+  border: 0;
+  margin-top: 2%;
+  padding-left: 3%;
+  background: #ffffff;
+  -webkit-box-shadow: 0px 0px 48px 0px rgb(218, 218, 218);
+  box-shadow: 0px 0px 48px 0px rgb(218, 218, 218);
+}
+.formWord textarea {
+  width: 100%;
+  margin-bottom: 10%;
+  border: 0;
+  margin-top: 2%;
+  height: 80px;
+  color: black;
+  -webkit-box-shadow: 0px 0px 48px 0px rgb(218, 218, 218);
+  box-shadow: 0px 0px 48px 0px rgb(218, 218, 218);
+  padding-left: 3%;
 }
